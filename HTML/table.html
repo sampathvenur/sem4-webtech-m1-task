@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Table Example</title>
+    <link rel="stylesheet" href="/CSS/table.css">
+</head>
+
+<body>
+
+    <h1>Example Webpage Using HTML Tables</h1>
+
+    <h2>19th Century French Paintings</h2>
+    <table>
+        <caption>19th Century French Paintings</caption>
+        <col class="artistName" />
+        <colgroup id="paintingColumns">
+            <col />
+            <col />
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Artist</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total Number of Paintings</td>
+                <td>2</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>The Death of Marat</td>
+                <td>Jacques-Louis David</td>
+                <td>1793</td>
+            </tr>
+            <tr>
+                <td>Burial at Ornans</td>
+                <td>Gustave Courbet</td>
+                <td>1849</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Castle Image and Details</h2>
+    <table>
+        <tr>
+            <td>
+                <img src="/images/castle.jpg" alt="Castle" width="400px" />
+            </td>
+            <td>
+                <h2>Castle</h2>
+                <p>Lewes, UK</p>
+                <p>Photo by: Michele Brooks</p>
+                <p>Built in 1069, the castle has a tremendous view of the town of Lewes and the surrounding countryside.
+                </p>
+                <h3>Other Images by Michele Brooks</h3>
+                <table class="nested-table">
+                    <tr>
+                        <td><img src="/images/table1.jpg" alt="Image 464" /></td>
+                        <td><img src="/images/table2.webp" alt="Image 537" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/images/table3.jpg" alt="Image 700" /></td>
+                        <td><img src="/images/table4.webp" alt="Image 828" /></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Row Span and Col Span Example</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Row span 2</td>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+                <td>Cell 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Column span 3</td>
+            </tr>
+            <tr>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+                <td>Cell 6</td>
+                <td>Cell 7</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

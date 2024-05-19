@@ -1,0 +1,44 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+col.artistName {
+    background-color: #f9f9f9;
+}
+
+colgroup#paintingColumns col {
+    background-color: #f4f4f4;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.nested-table img {
+    width: 200px;
+}
+
+.nested-table td {
+    padding: 0;
+    border: none;
+}
